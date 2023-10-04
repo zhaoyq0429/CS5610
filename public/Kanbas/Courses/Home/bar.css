@@ -1,0 +1,23 @@
+/* Remove the bullet points from the list */
+.wd-kanbas-navigation {
+    list-style-type: none;
+    padding-left: 20px; /* Remove default padding for unordered lists */
+}
+
+/* Add more gap between the list items */
+.wd-kanbas-navigation li {
+    margin-bottom: 15px; /* Adjust this value to your liking */
+}
+.wd-course-navigation {
+    list-style-type: none;
+    padding-left: 20px; /* Remove default padding for unordered lists */
+}
+
+/* Add more gap between the list items */
+.wd-course-navigation li {
+    margin-bottom: 10px; /* Adjust this value to your liking */
+}
+a {
+    text-decoration: none;  /* Removes underline */
+    color: red;             /* Makes the text color red */
+}

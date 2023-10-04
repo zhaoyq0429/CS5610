@@ -1,0 +1,62 @@
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+    color: #6c757d; /* You can set the color you prefer */
+      }
+.breadcrumb {
+        padding-bottom: 0; /* Or any smaller value */
+        margin-bottom: 0;  /* Or any smaller value */
+    }
+#main-content {
+        width: 100%;
+        height: calc(100% - 50px);  /* assuming your navbar is 50px high */
+        overflow: auto;  /* to handle content that might be too large */
+    }
+.button-height {
+    height:38px;
+}
+
+#search {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#text {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.no-resize {
+    resize: none; /* Disables resizing */
+    overflow: hidden; /* Hides the scrollbar */
+    width: 100%; /* Ensures it takes full width */
+}
+
+
+#text-with-height {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Placeholder Styling */
+#search::placeholder {
+    color: #a9a9a9; /* Light grey text */
+    font-style: italic;
+}
+h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.bold{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+a {
+    text-decoration: none;
+}

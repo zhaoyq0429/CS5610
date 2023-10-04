@@ -1,0 +1,53 @@
+.course-card {
+    min-width: 270px;
+    max-width: 270px;
+    margin-bottom: 40px; /* For spacing between rows */
+}
+
+.course-card.col {
+    flex: none; /* This will disable the flex of Bootstrap grid system */
+    width: 270px; /* This will set the width to 270px */
+}
+
+.courses-container {
+    margin-left: 30px; /* Spacing between the navigation sidebar and the left-most course */
+    gap: 10px; /* You may still use gap to separate rows. If gap doesn’t work, use margin-bottom on .course-card */ 
+}
+
+.card img {
+    width: 100%;
+    height: auto; /* Assuming you want the images to maintain their aspect ratio */
+}
+
+.card-top {
+    background-color: blue; /* Specify the color you prefer */
+    height: 150px; /* Or any other value */
+}
+
+@media (min-width: 992px) {
+    /* lg and above: 4 cards in a row */
+    .course-card {
+        flex: 0 0 23.8%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* md: 3 cards in a row */
+    .course-card {
+        flex: 0 0 32%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* sm: 2 cards in a row */
+    .course-card {
+        flex: 0 0 48%;
+    }
+}
+
+@media (max-width: 575px) {
+    /* xs: 1 card in a row */
+    .course-card {
+        flex: 0 0 100%;
+    }
+}

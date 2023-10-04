@@ -1,0 +1,60 @@
+.wide-column {
+    width: 100vw;
+    max-width: 1000px;
+    overflow-x: auto;
+  }
+.breadcrumb-item + .breadcrumb-item::before {
+content: ">";
+color: #6c757d; /* You can set the color you prefer */
+  }
+  .breadcrumb {
+    padding-bottom: 0; /* Or any smaller value */
+    margin-bottom: 0;  /* Or any smaller value */
+}
+.button-height {
+    height:38px;
+}
+.fixed-size-button {
+    width: 250px;
+    height: 38px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* Your existing styles and media queries... */
+
+/* For wider screens: Show all columns, hide mobile navigation buttons */
+@media (min-width: 769px) {
+    .wd-kanbas-navigation,
+    .wd-course-navigation {
+        display: block;
+    }
+    .mobile-nav-button {
+        display: none;
+    }
+}
+
+/* For medium screens: Hide last column, show the sandwich icon for Kanbas navigation */
+@media (max-width: 768px) {
+    .wd-course-navigation {
+        display: none;
+    }
+    .sandwich-icon {
+        display: block;
+    }
+}
+
+/* For narrow screens: Hide first and second columns, show the sandwich and chevron icons */
+@media (max-width: 576px) {
+    .wd-kanbas-navigation,
+    .wd-course-navigation {
+        display: none;
+    }
+    .sandwich-icon,
+    .chevron-icon {
+        display: block;
+    }
+}
+.text-red {
+    color: red;
+}

@@ -1,0 +1,46 @@
+.wd-course-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 190px;
+    margin: 0px;
+    margin-left: 25px;
+  }
+  .wd-course-navigation li {
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .wd-course-navigation li.wd-active {
+    border-left: 2px solid black;
+  }
+  .wd-course-navigation li.wd-active a {
+    color: black;
+  }
+  
+  .wd-course-navigation a {
+    color: red;
+    text-decoration: none;
+    text-align: left; /* align text to left */
+    display: block; /* to add padding inside a tag */
+    padding-left: 10px; /* space between the left border and the link's text */
+    white-space: normal; /* Allow text to wrap */
+    overflow-wrap: break-word; /* Break long words if needed */
+  }
+  /* Hyperlink Styling */
+a {
+  color: red;
+  text-decoration: none;
+}
+
+/* Checkmark Icon Color */
+.fa-check {
+  color: green;
+}
+
+/* Bootstrap 4 doesn't have utility for padding left, so a custom class is added */
+.pl-2 {
+  padding-left: 2rem;
+}
