@@ -1,0 +1,67 @@
+.card {
+    width: 270px;
+    margin: 0 auto 20px;  /* This will center the card in its column and add 20px spacing below */
+    border-radius: 5px;
+    overflow: hidden; /* Handles border-radius of card-top */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.card-top {
+    background-color: #007BFF; /* Blue color, you can replace it with a gradient or other color */
+    height: 150px;
+    position: relative;
+}
+
+.dots {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+}
+
+.card-body {
+    background-color: white;
+    padding: 15px;
+}
+
+.icon {
+    margin-top: 10px;
+    color: #007BFF;
+}
+
+@media (min-width: 1200px) {
+    /* xl and above: 4 cards in a row */
+    .course-card {
+        flex: 0 0 23.8%;
+    }
+}
+
+@media (min-width: 992px) {
+    /* lg: 4 cards in a row */
+    .card {
+        flex: 0 0 23.8%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* md: 3 cards in a row */
+    .card {
+        flex: 0 0 32%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    /* sm: 2 cards in a row */
+    .card {
+        flex: 0 0 48%;
+    }
+}
+
+@media (max-width: 575px) {
+    /* xs: 1 card in a row */
+    .card {
+        flex: 0 0 100%;
+    }
+}
+/* You can add responsive rules or any other customization as needed */

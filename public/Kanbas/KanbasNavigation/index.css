@@ -32,11 +32,8 @@
     margin-bottom: 7.5px; /* Between 5 and 10 pixels */
   }
   
-  .wd-kanbas-navigation a.account i {
-    color: white; /* The Account icon must be white */
-  }
-  .wd-kanbas-navigation a.account_gray i {
-    color: gray; /* The Account icon must be white */
+  .account-icon {
+    color: gray;
   }
   /* The spacing between text, icons, and links is controlled by margin and padding properties in your CSS. */
   

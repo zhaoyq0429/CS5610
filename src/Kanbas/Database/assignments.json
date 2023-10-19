@@ -1,0 +1,14 @@
+[
+    { "_id": "A101", "title": "A1 SETUP", "course": "RS101", "description": "Multiple Choice | Week starting on Monday September 5th(9/5/2022) Module | Due Sep 18,2022 at 11:59pm | 100pts" },
+    { "_id": "A102", "title": "A2 HTML", "course": "RS101" , "description": "Multiple Choice | Week starting on Monday September 5th(9/5/2022) Module | Due Sep 18,2022 at 11:59pm | 100pts"},
+    { "_id": "A103", "title": "A3 CSS", "course": "RS101" , "description": "Multiple Choice | Week starting on Monday September 5th(9/5/2022) Module | Due Sep 18,2022 at 11:59pm | 100pts"},
+    { "_id": "A104", "title": "A4 BOOTSTRAP", "course": "RS101" , "description": "Multiple Choice | Week starting on Monday September 5th(9/5/2022) Module | Due Sep 18,2022 at 11:59pm | 100pts"},
+    { "_id": "A105", "title": "A5 JAVASCRIPT", "course": "RS101" , "description": "Multiple Choice | Week starting on Monday September 5th(9/5/2022) Module | Due Sep 18,2022 at 11:59pm | 100pts"},
+    { "_id": "A106", "title": "A6 REACT", "course": "RS101" , "description": "Multiple Choice | Week starting on Monday September 5th(9/5/2022) Module | Due Sep 18,2022 at 11:59pm | 100pts"},
+    { "_id": "A201", "title": "Aerodynamics Quiz", "course": "RS102" },
+    { "_id": "A202", "title": "Flow Analysis", "course": "RS102" },
+    { "_id": "A203", "title": "Heating Analysis", "course": "RS102" },
+    { "_id": "A301", "title": "Structural Design Task", "course": "RS103" },
+    { "_id": "A302", "title": "Orbital Calculations", "course": "RS103" },
+    { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" }
+  ]

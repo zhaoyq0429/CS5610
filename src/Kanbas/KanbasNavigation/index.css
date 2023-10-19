@@ -1,0 +1,58 @@
+.wd-kanbas-navigation {
+  background-color: black;
+  list-style: none;
+  padding: 0px;
+  width: 80px; /* Between 75 and 85 pixels wide */
+  margin: 0px;
+}
+.wd-kanbas-navigation ul {
+  padding: 0;
+  margin: 0;
+}
+
+.wd-kanbas-navigation li {
+  display: flex;               /* Flexbox for vertical centering */
+  align-items: center;         /* Vertically centers the content */
+  justify-content: center;     /* Horizontally centers the content */
+  padding: 7.5px;
+  margin-bottom: 7.5px;
+  font-size: 0.8em;
+  text-align: center;
+  list-style-type: none;
+  flex-direction: column;      /* Stack the icon and text vertically */
+}
+
+.wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+
+.wd-kanbas-navigation li.wd-active a {
+  color: red;
+}
+
+.wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+  display: flex;               /* Flexbox for vertical centering */
+  flex-direction: column;      /* Stack the icon and text vertically */
+  align-items: center;         /* Vertically centers the content */
+  justify-content: center;     /* Horizontally centers the content */
+  width: 100%;                 /* Takes the full width of the container */
+  height: 100%;                /* Takes the full height of the container */
+}
+
+/* Default color for all icons */
+.wd-icon {
+  color: red; 
+  font-size: 2em;
+  margin-bottom: 7.5px;
+}
+
+/* Specific styles for Account link when it's not active */
+.account-icon {
+  color: gray;
+}
+
+.wd-kanbas-navigation a.account {
+  color: gray;
+}
