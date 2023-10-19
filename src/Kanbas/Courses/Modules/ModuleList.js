@@ -20,8 +20,8 @@ function ModuleList() {
         </button>
         <button className="btn btn-danger float-end">+ Module</button>
         <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a className="dropdown-item" href="#">Publish all items and modules</a>
-          <a className="dropdown-item" href="#">UnPublish</a>
+          <div className="dropdown-item">Publish all items and modules</div>
+          <div className="dropdown-item" >UnPublish</div>
         </div>
         <button className="btn btn-secondary dropdown-toggle float-end" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i className="fa-regular fa-circle-check text-success"></i> Publish All
@@ -30,33 +30,6 @@ function ModuleList() {
         <button className="btn btn-secondary float-end">Collapse All</button>
         </div>
         <hr/>
-        {/* <div>
-        <div className="list-group">
-          <a href="#" class="list-group-item list-group-item-secondary">
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-            Resources
-            <span class="fa fa-check-circle float-end text-success"></span>
-          </a>
-          <br/><br/>
-          <a href="#" class="list-group-item list-group-item-secondary">
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-            Required Textbook
-            <span class="fa fa-check-circle float-end text-success"></span>
-          </a>
-          <br/><br/>
-          <a href="#" class="list-group-item list-group-item-secondary">
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-            Week 0 - INTRO
-            <span class="fa fa-check-circle float-end text-success"></span>
-          </a>
-          <br/><br/>
-          <a href="#" class="list-group-item list-group-item-secondary">
-            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-            Week 1 - HTML
-            <span class="fa fa-check-circle float-end text-success"></span>
-          </a>
-          </div>
-        </div> */}
     </div> 
     <ul className="list-group">
   {
