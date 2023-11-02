@@ -1,15 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import db from "../../Database";
 import "./index.css"
+import { useSelector, useDispatch } from "react-redux";
+import {
+  addModule,
+  deleteModule,
+  updateModule,
+  setModule,
+} from "./modulesReducer";
+
 
 function ModuleList() {
   const { courseId } = useParams();
-  const modules = db.modules;
+  const modules = useSelector((state) => state.modulesReducer.modules);
+  const module = useSelector((state) => state.modulesReducer.module);
+  const dispatch = useDispatch();
 
-  console.log(db.modules);
-  console.log(courseId);
-  console.log(modules.filter((module) => module.course === courseId).length);
+  // console.log(db.modules);
+  // console.log(courseId);
+  // console.log(modules.filter((module) => module.course === courseId).length);
 
   return (
     <div>
@@ -32,13 +42,44 @@ function ModuleList() {
         <hr/>
     </div> 
     <ul className="list-group">
-  {
-    modules
+    <li className="list-group-item">
+      <div>
+        <button 
+        style={{marginRight: '34px' }}
+        onClick={() => dispatch(addModule({ ...module, course: courseId }))}>
+        Add
+        </button>
+        <input value={module.name}
+          onChange={(e) => dispatch(setModule({ ...module, name: e.target.value }))
+        }/>
+      </div>
+      <div>
+      <button 
+      style={{marginRight: '10px' }}
+      onClick={() => dispatch(updateModule(module))}>
+        Update
+        </button>
+        <textarea value={module.description}
+          onChange={(e) => dispatch(setModule({ ...module, description: e.target.value }))
+        }/>
+        </div>
+      </li>
+  {modules
       .filter((module) => module.course === courseId)
       .map((module, index) => (
         <li key={index} className="list-group-item list-group-item-secondary list-group-item-gap">
+          <button
+              style={{ backgroundColor: 'green', color: 'white', marginRight: '10px' }}
+              onClick={() => dispatch(setModule(module))}>
+              Edit
+            </button>
+          <button
+              style={{ backgroundColor: 'red', color: 'white' }}
+               onClick={() => dispatch(deleteModule(module._id))}>
+              Delete
+            </button>
           <i className="fa fa-ellipsis-v" aria-hidden="true"></i>
-          <h5>{module.name}</h5>
+          <h3>{module.name}</h3>
           <span className="fa fa-check-circle float-end text-success"></span>
           <p>{module.description}</p>
         </li>
