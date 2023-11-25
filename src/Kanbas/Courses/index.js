@@ -1,19 +1,29 @@
-import React from "react";
+import db from "../../Kanbas/Database";
 import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import JsonPre from "../../Labs/a3/JsonPre";
-import db from "../Database";
-import CourseNavigation from "./CourseNavigation";
+import CourseNavigation from "../CourseNavigation";
 import Modules from "./Modules";
 import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
+import "./index.css"
+import {useState, useEffect} from "react";
+import * as client from"./client";
+
 
 function Courses({ courses }) {
-  const { courseId } = useParams();
-  // const {pathname} = useLocation();
-  // const [empty, kanbas, courses, id, screen] = pathname.split("/");
-  const course = courses.find((course) => course._id === courseId);
+    const { courseId } = useParams();
+    // const course = courses.find((course) => course._id === courseId);
+    const [course, setCourse] = useState({});
+    const fetchCourse = async () => {
+        const course = await client.fetchCourse(courseId);
+        setCourse(course);
+    };
+    useEffect(() => {
+        fetchCourse();
+    }, []);
+
   return (
     <div>
       {/* <h4>Courses {course.name} / {screen}</h4> */}
